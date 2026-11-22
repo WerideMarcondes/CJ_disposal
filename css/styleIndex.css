@@ -756,8 +756,8 @@ body {
 
   .botao-flutuante {
     position: fixed;
-    bottom: 800px;
-    left: 400px;
+    bottom: 920px;
+    left: 230px;
     z-index: 1000;
   }
 
