@@ -460,13 +460,12 @@ body {
 
   .swiper {
     width: 100%;
-    height: 350px;
+    height: 250px;
     margin-top: 10px;
   }
 
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -475,7 +474,7 @@ body {
   .swiper-slide img {
     display: block;
     width: 100%;
-    height: 270px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -757,7 +756,7 @@ body {
 
   .botao-flutuante {
     position: fixed;
-    bottom: 850px;
+    bottom: 800px;
     left: 400px;
     z-index: 1000;
   }
@@ -950,6 +949,51 @@ body {
     text-transform: uppercase;
     display: inline-block;
     transform: skewX(-6deg);
+  }
+
+  #add_to_cart {
+    color: #0f1111;
+    background-color: #ffd814;
+    border-radius: 20px;
+    border: 1px solid #fcd200;
+    /* padding: 8px 25px; */
+    text-align: center;
+    font-size: 8px;
+    height: 30px;
+    width: 70px;
+    font-weight: bolder;
+  }
+  .go_cart {
+    color: #11100f;
+    background-color: #ffd814;
+    border-radius: 20px;
+    border: 1px solid #fcd200;
+    /* padding: 8px 25px; */
+    text-align: center;
+    font-size: 8px;
+    height: 30px;
+    width: 70px;
+    font-weight: bolder;
+  }
+
+  .close {
+    color: #0f1111;
+    background-color: #c92a0d;
+    border-radius: 20px;
+    border: 1px solid#c92a0d;
+    /* padding: 8px 25px; */
+    text-align: center;
+    font-size: 8px;
+    height: 30px;
+    width: 70px;
+    font-weight: bolder;
+  }
+
+  .botao-flutuante {
+    position: fixed;
+    bottom: 700px;
+    left: 450px;
+    z-index: 1000;
   }
 
   .logo-cjhd .cj {
@@ -1205,6 +1249,50 @@ body {
     background-repeat: no-repeat; /* Evita repetição */
     margin: -10px;
     margin-top: 1px;
+  }
+
+  .Rent_me-modal6yard {
+    width: 40%;
+    height: 100px;
+    border-radius: 0px;
+    background-image: url("../img/rent-me/bin6yard.jpeg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    margin: auto;
+  }
+
+  .Rent_me-modal10yard {
+    width: 40%;
+    height: 100px;
+    border-radius: 0px;
+    background-image: url("../img/rent-me/bin10yard.jpeg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    margin: auto;
+  }
+
+  .Rent_me-modal14yard {
+    width: 40%;
+    height: 100px;
+    border-radius: 0px;
+    background-image: url("../img/rent-me/bin14yard.jpeg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    margin: auto;
+  }
+
+  .Rent_me-modal16yard {
+    width: 50%;
+    height: 100px;
+    border-radius: 0px;
+    background-image: url("../img/rent-me/bin16yard.jpeg");
+    background-size: cover; /* Faz a imagem cobrir o card */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat; /* Evita repetição */
+    margin: auto;
   }
   .row {
     margin: auto;
