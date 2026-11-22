@@ -41,14 +41,8 @@ window.onload = function () {
   var button = document.querySelectorAll(".to_cart");
   for (var i = 0; i < button.length; i++) {
     button[i].addEventListener("click", function (event) {
-      // elementos = document.querySelectorAll(".contador");
-
       document.getElementById("contadorexterno").innerHTML = contador++;
       document.getElementById("contadormodal").innerHTML = contadorexterno++;
-
-      // for (var j = 0; j < elementos.length; j++) {
-      //   elementos[j].innerHTML = contador++;
-      // }
     });
   }
 
@@ -58,19 +52,19 @@ window.onload = function () {
   // 2. Passa por cada botão adicionando o evento de clique
   botoes.forEach((botao) => {
     botao.addEventListener("click", function (event) {
-      // 'this' ou 'event.currentTarget' é o botão que foi clicado
-
       // .closest() sobe no HTML até encontrar o container do card pai
       const cardPai = this.closest(".modal-body-rent_me");
 
       // Agora buscamos as informações APENAS dentro desse card pai
-      const nome = cardPai.querySelector(".description").innerText;
+      const name = cardPai.querySelector(".description").innerText;
       const valor = cardPai.querySelector(".value").innerText;
       const type = cardPai.querySelector(".type").innerText;
+      const image = document.querySelector(".image");
+      const newimage = image.classList[image];
 
       // Pronto! Você já tem as informações do card específico
-      console.log("Produto clicado:", nome);
-      console.log("Valor do produto:", valor);
+      console.log("Produto clicado:", name);
+      console.log("Valor do produto:", newimage);
 
       // Exemplo de uso: você pode mandar isso para um modal, carrinho, etc.
       // alert(`Você selecionou a bin: ${type} ${nome} por ${valor}`);
@@ -85,16 +79,26 @@ window.onload = function () {
       const new_p_modalboby = document.createElement("p");
       const new_p2_modalboby = document.createElement("p");
       const new_p3_modalboby = document.createElement("p");
+      const new_delimitation = document.createElement("hr");
+      const new_image = document.createElement("div");
 
       new_p_modalboby.classList.add("type");
       new_p2_modalboby.classList.add("description");
       new_p3_modalboby.classList.add("value");
+      new_delimitation.classList.add("delimitation");
+      new_image.classList.add(newimage);
 
-      new_p3_modalboby.innerText = type;
+      new_p_modalboby.innerText = type;
+      new_p2_modalboby.innerText = name;
+      new_p3_modalboby.innerText = valor;
 
       //6. Coloca a nova div dentro do container no HTML
       containercart.appendChild(new_modalboby);
+      new_modalboby.appendChild(new_image);
+      new_modalboby.appendChild(new_p_modalboby);
+      new_modalboby.appendChild(new_p2_modalboby);
       new_modalboby.appendChild(new_p3_modalboby);
+      new_modalboby.appendChild(new_delimitation);
     });
   });
 };

@@ -43,21 +43,20 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar hamburger fixed-top navbar-dark bg-black">
+        <nav class="navbar hamburger fixed-top navbar-dark bg-white">
           <div class="container-fluid">
-            <button class="corporate" onclick="logo()">
-              <img class="logo" src="./slidesbkg/logo.jpeg" alt="" />
-            </button>
-
             <button
               class="cart"
               data-bs-toggle="modal"
               data-bs-target="#My_cart"
             >
               <i class="fa-solid fa-cart-shopping"
-                ><span id="contadorexterno" class="contador">0</spasn></i
+                ><span id="contadorexterno" class="contador">0</span></i
               >
             </button>
+            <div class="logo-cjhd">
+              <label class="cj">CJ</label><label class="hd">HD</label>
+            </div>
             <button
               class="navbar-toggler"
               type="button"
@@ -76,7 +75,7 @@
             >
               <div class="offcanvas-header">
                 <label class="navbar-brand"
-                  ><label class="especialcase"> CJ</label> Hauling & Disposal
+                  ><label class="especialcase"> CJHD</label> Hauling & Disposal
                 </label>
                 <button
                   type="button"
@@ -125,8 +124,8 @@
                           class="dropdown-item"
                           type="button"
                           data-bs-toggle="modal"
-                          data-bs-target="#boom"
-                          >Why order a Boom pump?</a
+                          data-bs-target="#disposal"
+                          >Disposal?</a
                         >
                       </li>
                       <li><hr class="dropdown-divider" /></li>
@@ -261,7 +260,7 @@
                         type="button"
                         data-bs-toggle="modal"
                         data-bs-target="#boom"
-                        >Why order a Boom pump?</a
+                        >Dispoal?</a
                       >
                     </li>
                     <li><hr class="dropdown-divider" /></li>
@@ -332,13 +331,13 @@
             <input type="radio" hidden name="move-btn" id="rd4" />
 
             <div class="slide slideone">
-              <img class="slidesimg" src="./slidesbkg/binssize.jpeg" alt="" />
-            </div>
-            <div class="slide">
-              <img class="slidesimg" src="./slidesbkg/logo.jpeg" alt="" />
+              <img class="slidesimg" src="./slidesbkg/logo.jpg" alt="" />
             </div>
             <div class="slide">
               <img class="slidesimg" src="./slidesbkg/cjtruckbin.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img class="slidesimg" src="./slidesbkg/binssize.jpeg" alt="" />
             </div>
             <div class="slide">
               <img class="slidesimg" src="./slidesbkg/cjmachine.jpeg" alt="" />
@@ -351,7 +350,7 @@
             <div class="card-body">
               <h5 class="card-title" id="abouts">
                 <label class="navbar-brand"
-                  ><label class="especialcase"> CJ</label> Hauling &
+                  ><label class="especialcase"> CJHD</label> Hauling &
                   Disposal</label
                 >
               </h5>
@@ -366,6 +365,14 @@
                 projects.
               </p>
             </div>
+            <a
+              href="https://api.whatsapp.com/send/?phone=&text"
+              target="_blank"
+              type="button"
+              class="btn button_schendule"
+            >
+              <i class="fa-solid fa-calendar"></i>Book appointment right now
+            </a>
           </div>
           <div class="card" id="mission">
             <!-- <div class="card-image-mission"></div> -->
@@ -411,9 +418,11 @@
               <div class="swiper-pagination"></div>
             </div>
             <div class="card-body">
-              <h5 class="card-title" id="missions">Our Bins</h5>
+              <h5 class="card-title missionsTitle">Our Bins</h5>
               <p>
-                <label class="especialcaseblack card-titleblack"> Lorem</label>
+                <label class="especialcaseblack card-titleblack missionsTitle">
+                  Lorem</label
+                >
                 ipsum dolor sit amet consectetur adipisicing elit. Maxime libero
                 possimus veritatis quaerat iste itaque asperiores vel, laborum
                 aperiam ipsam soluta et tempora, adipisci veniam sequi quibusdam
@@ -422,7 +431,120 @@
             </div>
           </div>
 
-          <div class="navigationarea card">
+          <section class="mission_card" id="oursrevice">
+            <div class="mission_card">
+              <p class="card-title" id="missions">Our Services</p>
+              <div class="card-body">
+                <div class="cardservices">
+                  <a
+                    class="dropdown-item"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#deepClean"
+                  >
+                    <div
+                      class="card"
+                      class="dropdown-item"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#disposal"
+                    >
+                      <img
+                        src="./img/nossos servicos/remocao.jpg"
+                        class="card-img"
+                        alt="..."
+                      />
+                      <p
+                        class="card-title_services"
+                        class="dropdown-item"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#disposal"
+                      >
+                        Disposal
+                      </p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </a>
+
+                  <a
+                    class="dropdown-item"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#regular"
+                  >
+                    <div
+                      class="card"
+                      class="dropdown-item"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#haulage"
+                    >
+                      <img
+                        src="./img/nossos servicos/maquina.jpg"
+                        class="card-img"
+                        alt="..."
+                      />
+
+                      <p class="card-title_services">Haulage.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </a>
+
+                  <a
+                    class="dropdown-item"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Office"
+                  >
+                    <div
+                      class="card"
+                      class="card"
+                      class="dropdown-item"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#junk"
+                    >
+                      <img
+                        src="./img/nossos servicos/balde.jpg"
+                        class="card-img"
+                        alt="..."
+                      />
+                      <p class="card-title_services">Junk Removal</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </a>
+
+                  <a
+                    class="dropdown-item"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#postconstruction"
+                  >
+                    <div
+                      class="card"
+                      class="card"
+                      class="dropdown-item"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#rental"
+                    >
+                      <img
+                        src="./img/nossos servicos/bins.jpg"
+                        class="card-img service4"
+                        alt="..."
+                      />
+
+                      <p class="card-title_services">Rental Bins</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="navigationarea">
             <div class="card-body">
               <div class="links">
                 <label class="labelnavigation">Navigation</label>
@@ -433,7 +555,9 @@
                   href="https://weridemarcondes.github.io/jdconcret/gallery.html"
                   >Photo gallery</a
                 >
-                <a class="nav-link" aria-current="page" href="">Services</a>
+                <a class="nav-link" aria-current="page" href="#oursrevice"
+                  >Ours Services</a
+                >
                 <a class="nav-link" aria-current="page" href="">Bins Price</a>
                 <a
                   class="nav-link"
@@ -500,7 +624,48 @@
       <!-- Modal -->
       <div
         class="modal fade"
-        id="boom"
+        id="disposal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Disposal?</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="card-image-modal-deep"></div>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                quae provident voluptas, hic nulla incidunt et accusamus
+                dolorem? Vitae debitis incidunt minus labore, omnis non dicta
+                obcaecati sapiente et eveniet.
+              </p>
+              <ul></ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn close"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="rental"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
@@ -509,7 +674,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Why order a Boom pump?
+                Rental Bins?
               </h1>
               <button
                 type="button"
@@ -521,9 +686,94 @@
             <div class="card-image-modal-deep"></div>
             <div class="modal-body">
               <p>
-                It is essential for projects that require speed,
-                vertical/horizontal reach, and efficiency in concreting,
-                especially in large-scale or difficult-to-access projects.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                quae provident voluptas, hic nulla incidunt et accusamus
+                dolorem? Vitae debitis incidunt minus labore, omnis non dicta
+                obcaecati sapiente et eveniet.
+              </p>
+              <ul></ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn close"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="haulage"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Haulage?</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="card-image-modal-deep"></div>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                quae provident voluptas, hic nulla incidunt et accusamus
+                dolorem? Vitae debitis incidunt minus labore, omnis non dicta
+                obcaecati sapiente et eveniet.
+              </p>
+              <ul></ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn close"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="junk"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Junk Removal?
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="card-image-modal-deep"></div>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                quae provident voluptas, hic nulla incidunt et accusamus
+                dolorem? Vitae debitis incidunt minus labore, omnis non dicta
+                obcaecati sapiente et eveniet.
               </p>
               <ul></ul>
             </div>
@@ -611,7 +861,7 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="Rent_me-modal6yard"></div>
+            <div class="Rent_me-modal6yard image"></div>
             <div class="modal-body modal-body-rent_me">
               <p class="type">6 yard</p>
               <p id=" description" class="description">
@@ -640,7 +890,7 @@
               </div>
             </div>
             <hr class="delimitation" />
-            <div class="Rent_me-modal10yard"></div>
+            <div class="Rent_me-modal10yard image"></div>
             <div class="modal-body modal-body-rent_me">
               <p class="type">10 yard</p>
               <p id=" description" class="description">
@@ -670,7 +920,7 @@
             </div>
 
             <hr class="delimitation" />
-            <div class="Rent_me-modal14yard"></div>
+            <div class="Rent_me-modal14yard image"></div>
             <div class="modal-body modal-body-rent_me">
               <p class="type">14 yard</p>
               <p id=" description14yard" class="description">
@@ -700,7 +950,7 @@
             </div>
 
             <hr class="delimitation" />
-            <div class="Rent_me-modal16yard"></div>
+            <div class="Rent_me-modal16yard" data-tipo="image"></div>
             <div class="modal-body modal-body-rent_me">
               <p class="type">16 yard</p>
               <p id=" description16yard" class="description">
@@ -800,7 +1050,7 @@
         </nav>
       </footer>
     </section>
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         pagination: {
