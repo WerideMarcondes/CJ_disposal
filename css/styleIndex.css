@@ -250,7 +250,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #0f1111;
+    background-color: #1a1a1a;
   }
 
   .logo-cjhd {
@@ -292,6 +292,28 @@ body {
 
   .fa-cart-shopping {
     color: rgb(243, 105, 55);
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
   }
 
   .navbar-brand .jdcell {
@@ -441,7 +463,7 @@ body {
     background-image: linear-gradient(45deg, #eaa06b, #ff6b00, white);
     color: white;
     border-radius: 0;
-    height: 400px;
+    height: 450px;
     font-size: 18px;
   }
 
@@ -458,7 +480,7 @@ body {
     overflow: hidden; /* Garante que nada saia da borda */
     border-radius: 0;
     width: 100%;
-    height: 500px;
+    height: 700px;
     font-size: 18px;
   }
 
@@ -473,7 +495,7 @@ body {
     overflow: hidden; /* Garante que nada saia da borda */
     border-radius: 0;
     width: 100%;
-    height: 600px;
+    height: 500px;
     text-align: center;
   }
   .cardservices {
@@ -510,7 +532,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    height: 250px;
+    height: 210px;
   }
 
   .card-img {
@@ -801,7 +823,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #0f1111;
+    background-color: #1a1a1a;
   }
 
   .button_schendule {
@@ -993,7 +1015,8 @@ body {
   }
 
   .card-title_services {
-    font-size: 15px;
+    font-size: 25px;
+    font-weight: bolder;
     color: black;
     text-align: center;
     margin: 0;
