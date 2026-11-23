@@ -485,8 +485,8 @@ body {
     background-color: #1a1a1a;
     color: white;
     border-radius: 0;
-    height: 450px;
-    font-size: 18px;
+    height: 370px;
+    font-size: 15px;
   }
 
   .button_schendule {
@@ -502,8 +502,8 @@ body {
     overflow: hidden; /* Garante que nada saia da borda */
     border-radius: 0;
     width: 100%;
-    height: 700px;
-    font-size: 18px;
+    height: 500px;
+    font-size: 15px;
   }
 
   .missionsTitle {
@@ -527,7 +527,7 @@ body {
   }
 
   .card-title_services {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
     color: black;
     text-align: center;
@@ -1068,8 +1068,8 @@ body {
     background-color: #1a1a1a;
     color: white;
     border-radius: 0;
-    height: 400px;
-    font-size: 18px;
+    height: 300px;
+    font-size: 15px;
   }
 
   #mission {
@@ -1104,7 +1104,7 @@ body {
   }
 
   .card-title_services {
-    font-size: 30px;
+    font-size: 15px;
     font-weight: bolder;
     color: black;
     text-align: center;
@@ -1164,7 +1164,7 @@ body {
   }
 
   .card-title_services {
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     text-align: center;
     margin: 0;
