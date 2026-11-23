@@ -758,8 +758,8 @@ body {
 
   .botao-flutuante {
     position: fixed;
-    bottom: 700px;
-    left: 250px;
+    bottom: 640px;
+    left: 270px;
     z-index: 1000;
   }
 
@@ -999,7 +999,7 @@ body {
 
   .botao-flutuante {
     position: fixed;
-    bottom: 680px;
+    bottom: 580px;
     left: 400px;
     z-index: 1000;
   }
