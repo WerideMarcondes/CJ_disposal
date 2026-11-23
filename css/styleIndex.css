@@ -726,7 +726,7 @@ body {
     text-align: center;
     font-size: 8px;
     height: 30px;
-    width: 70px;
+    width: 90px;
     font-weight: bolder;
   }
   .go_cart {
@@ -751,14 +751,14 @@ body {
     text-align: center;
     font-size: 8px;
     height: 30px;
-    width: 70px;
+    width: 90px;
     font-weight: bolder;
   }
 
   .botao-flutuante {
     position: fixed;
-    bottom: 920px;
-    left: 230px;
+    bottom: 420px;
+    left: 300px;
     z-index: 1000;
   }
 
@@ -961,7 +961,7 @@ body {
     text-align: center;
     font-size: 8px;
     height: 30px;
-    width: 70px;
+    width: 90px;
     font-weight: bolder;
   }
   .go_cart {
@@ -986,7 +986,7 @@ body {
     text-align: center;
     font-size: 8px;
     height: 30px;
-    width: 70px;
+    width: 90px;
     font-weight: bolder;
   }
 
@@ -1471,4 +1471,13 @@ body {
 }
 .card-title-services {
   color: black;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white; /* Substitua pela cor desejada */
+  text-decoration: none; /* Opcional: remove o sublinhado */
 }
