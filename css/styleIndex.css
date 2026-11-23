@@ -124,7 +124,7 @@ body {
 .links a {
   display: block;
   color: #d4e6eb; /* Coloca um link embaixo do outro */
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .links p {
@@ -134,7 +134,7 @@ body {
 }
 
 .links .labelnavigation {
-  font-size: 23px;
+  font-size: 18px;
   font-weight: bolder;
   display: block; /* Coloca um link embaixo do outro */
   margin-bottom: 10px;
@@ -492,7 +492,7 @@ body {
   .button_schendule {
     background-color: #ff4d00;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   #mission {
@@ -512,7 +512,8 @@ body {
 
   .mission_card {
     color: #2e2a2b;
-    background-image: linear-gradient(45deg, #ff6b00, white, #ff6b00, white);
+    /* background-image: linear-gradient(45deg, #ff6b00, white, #ff6b00, white); */
+    background-color: #ff6b00;
     margin-top: 0px;
     overflow: hidden; /* Garante que nada saia da borda */
     border-radius: 0;
@@ -757,8 +758,8 @@ body {
 
   .botao-flutuante {
     position: fixed;
-    bottom: 420px;
-    left: 300px;
+    bottom: 700px;
+    left: 250px;
     z-index: 1000;
   }
 
@@ -851,7 +852,7 @@ body {
   .button_schendule {
     background-color: #ff4d00;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
   }
   .jd {
     color: rgb(243, 105, 55);
@@ -976,7 +977,13 @@ body {
     width: 70px;
     font-weight: bolder;
   }
+  .modal-body .buttons_rent-me {
+    text-align: center;
+  }
 
+  .buttons_rent-me {
+    flex-direction: row; /* Garante que fiquem em linha (lado a lado) */
+  }
   .close {
     color: #0f1111;
     background-color: #c92a0d;
@@ -992,8 +999,8 @@ body {
 
   .botao-flutuante {
     position: fixed;
-    bottom: 700px;
-    left: 450px;
+    bottom: 680px;
+    left: 400px;
     z-index: 1000;
   }
 
@@ -1470,7 +1477,7 @@ body {
   }
 }
 .card-title-services {
-  color: black;
+  color: white;
 }
 
 a,
@@ -1480,4 +1487,15 @@ a:hover,
 a:active {
   color: white; /* Substitua pela cor desejada */
   text-decoration: none; /* Opcional: remove o sublinhado */
+}
+
+.button_schendule,
+.button_schendule:hover,
+.button_schendule:active,
+.button_schendule:focus,
+.button_schendule:visited {
+  background-color: #ff4d00; /* Mantenha exatamente a cor original */
+  color: #ffffff;
+  outline: none; /* Remove a borda de foco padrão se desejar */
+  box-shadow: none; /* Remove sombras que alguns frameworks adicionam ao clicar */
 }
